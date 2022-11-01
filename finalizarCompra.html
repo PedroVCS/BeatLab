@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/finalizarCompra.css">
+    <script src="/js/finalizarcompra.js" defer></script>
     <title>Forma de pagamento</title>
 </head>
 <body>
@@ -13,11 +14,12 @@
     </header>
 
   <main>
-    <section id="inf-pag">
-        <div class="dados">
+    
+    <section id="infPag">
+        <div id="dados">
             <div class="pag"> <h1>Compra com um click</h1> </div>
             <form class="boxs">
-            <div class="box">
+            <div id="box">
                 <label for="name">Nome</label>
                 <input type="text" id="name" name="name" >
                 <label for="cpf">CPF</label>
@@ -30,17 +32,20 @@
                 <button class="bt-finalizar">Finalizar</button>
             </form>
         </div> 
-    </section>
-    <section class="formas-pag">
-        
-            <img src="/img/finalizarcompra-img/logo-pix-1024.png" alt="">
-            <img src="/img/finalizarcompra-img/kisspng-mastercard-.png" alt="">
+    </section>  
+    <div class="barra-lateral"></div>
+    <section id="formas-pag">
+    
+        <form id="bt-forma-pag">
+         <button id="action-bt"><img src="/img/finalizarcompra-img/logo-pix-1024.png" alt=""></button>
+         <button id="action-bt2"><img src="/img/finalizarcompra-img/kisspng-mastercard-.png" alt=""></button>
             
-             <div class="umclick">
-            <h4>Compra com um click</h4>
-            <img src="/img/finalizarcompra-img/kisspng-logo-mastercard.png" alt="">
-                <span>Final 9755</span>
+        <div class="umclick">
+        <button class="action-br3"><h4>Compra com um click</h4>
+        <img src="/img/finalizarcompra-img/kisspng-logo-mastercard.png" alt="">
+        <span>Final 9755</span></button>
         </div>
+        </form>
     </section>
   
     <section id="modo-pag"></section>
