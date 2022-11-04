@@ -316,7 +316,7 @@ height: 2rem;
 margin-right: 4rem;
 margin-left: 1rem;
 }
-.bt button{
+.resumo-pedido button{
     width: 15rem;
     height: 2.5rem;
     position: relative;
@@ -327,19 +327,29 @@ box-shadow: 2px 4px 4px 3px rgba(0, 0, 0, 0.25);
 border-radius: 10px;
 transition: 1400ms;
 }
+.resumo-pedido button a{
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    transition: .09s;
+}
+.resumo-pedido button a:hover{
+    font-size: 30px;
+}
+
 .bt label{
     margin: .5rem;
 }
-.bt a {
+.return-home  h5 {
     text-decoration: none;
     color: #FFFFFF;   
     font-size: 20px;
     position: relative;
     top: 8rem;
-    left: 4.5rem;
+    left: 3rem;
 }
 
-.bt button:hover{
+.resumo-pedido button:hover{
     background-color: #514869;
 }
 
