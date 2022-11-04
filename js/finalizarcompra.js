@@ -1,5 +1,5 @@
 
-var button = document.getElementById("action-bt");
+var button = document.getElementById("action-bt3");
 
 button.addEventListener("click", function(){
     var dados = document.getElementById("dados");

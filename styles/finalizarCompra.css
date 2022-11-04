@@ -104,17 +104,19 @@ left: 10rem;
     top: .5rem;
 
 }
-#bt-forma-pag{
+.formas-pag{
     display: flex;
     flex-direction: column;
+    
 }
 .formas-pag img{
-    width: 9rem;   
+    width: 9rem;
+       
 }
 .formas-pag .umclick{
     width: 12rem;
 }
-#bt-forma-pag button{
+.formas-pag button{
     width: 12rem;
     height: 8rem;
     border-radius: .5rem;
