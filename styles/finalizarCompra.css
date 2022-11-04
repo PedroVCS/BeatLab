@@ -33,7 +33,7 @@ main{
     flex-wrap:wrap
 }
 
-#infPag{
+.infPag{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -41,10 +41,10 @@ main{
     position: relative;
     right: 9rem;
 }
-#infPag .dados{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#dados{
+    /* display: flex; */
+    /* flex-direction: column;
+    align-items: center; */
 
 }
 .pag h1{
@@ -108,10 +108,10 @@ left: 10rem;
     display: flex;
     flex-direction: column;
 }
-#formas-pag img{
+.formas-pag img{
     width: 9rem;   
 }
-#formas-pag .umclick{
+.formas-pag .umclick{
     width: 12rem;
 }
 #bt-forma-pag button{
@@ -122,21 +122,138 @@ left: 10rem;
     margin: .5rem;
     transition: 2000ms;
  }
-#formas-pag .umclick h4{
+.formas-pag .umclick h4{
     font-size: 15px;
    
 }
-#formas-pag .umclick img{
+.formas-pag .umclick img{
     width: 4rem;
 }
 .umclick span{
 font-size: 12px;
 }
 
-#formas-pag button:hover{
+.formas-pag button:hover{
     background-color: #08F3C9;
     width: 15rem;
 }
  .hide{
     display: none;
  }
+.janela-modal{
+    width: 100vw;
+    height: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 15rem;
+    background-color: #00000088;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+   
+    
+}
+.inf-modal{
+    width: 40rem;
+    height: 25rem;
+    background-color: #ffffff71;
+    backdrop-filter: blur(10px);
+    position: relative;
+    bottom: 33rem;
+    padding:1rem;
+    border-radius: 15px;
+
+    
+}
+.compra-realizada{
+    background-color: #514869;
+    position: relative;
+    bottom: 2.4rem;
+    right: 1rem;
+    width: 42rem;
+    height: 5rem;
+    border-radius: 15px;
+}
+.compra-realizada h1{
+    margin: 1rem;
+    text-align: center  ;
+}
+.itens img{
+    width: 6rem;
+   height: 4rem;
+   border-top-left-radius: 15px;
+   border-bottom-left-radius: 15px;
+}
+.inf-pagamento img{
+    width: 4rem;
+  
+}
+.itens footer{
+    display: flex;
+    flex-direction: column;
+    
+}
+.itens span{
+    margin-bottom: 1rem;
+    font-size: 20px;
+    margin-left: .5rem;
+}
+
+.itens{
+    display: flex;
+    flex-direction: row;
+    width: 16rem;
+    height: 4rem;
+    background-color: #514869;
+    margin: 2rem;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-radius: 15px;
+}
+
+.inf-pagamento{
+width: 15rem;
+height: 5rem;
+background-color: #514869;
+color: #FFFFFF;
+position: absolute;
+left: 3.1rem;
+border-radius: 15px;
+}
+.inf-pagamento h4{
+    color:#000000;
+    text-align: center;
+    width: 10rem;
+    position: relative;
+    bottom: 1rem;
+    left: 2.3rem;
+}
+
+.inf-pagamento footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 17px;
+    justify-content: center;   
+    position: relative; 
+    bottom: 2.5rem;
+}
+#home-bt{
+    position: absolute;
+   width: 10rem;
+   height: 2.5rem;
+   border-radius: 15px;
+   border: 0;
+   background-color: #08F3C9;
+   color: #FFFFFF;
+   font-size: 30px;
+   cursor: pointer;
+   left: 28rem; 
+   bottom: 3rem;
+}
+.janela-modal.abrir{
+    display: flex;
+}
+

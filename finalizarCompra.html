@@ -14,8 +14,8 @@
     </header>
 
   <main>
-    
-    <section id="infPag">
+   
+    <section class="infPag">
         <div id="dados">
             <div class="pag"> <h1>Compra com um click</h1> </div>
             <form class="boxs">
@@ -29,15 +29,19 @@
                 <input type="checkbox" name="termos" id="termos">
                 <h2>Eu li e concordo com os <a href="/termos">Termos de uso</a></h2>
             </div>
-                <button class="bt-finalizar">Finalizar</button>
+                
             </form>
+            <button onclick="finalizar()" class="bt-finalizar">Finalizar</button>
         </div> 
     </section>  
     <div class="barra-lateral"></div>
-    <section id="formas-pag">
     
+    <section class="formas-pag">
+       <!-- <button id="action-bt">fechar</button>  -->
+       <button id="action-bt"><img src="/img/finalizarcompra-img/logo-pix-1024.png" alt=""></button>
+
         <form id="bt-forma-pag">
-         <button id="action-bt"><img src="/img/finalizarcompra-img/logo-pix-1024.png" alt=""></button>
+        
          <button id="action-bt2"><img src="/img/finalizarcompra-img/kisspng-mastercard-.png" alt=""></button>
             
         <div class="umclick">
@@ -47,8 +51,34 @@
         </div>
         </form>
     </section>
-  
-    <section id="modo-pag"></section>
+    
+ 
+        <div class="janela-modal" id="janela-modal" >
+          <div class="inf-modal">
+                
+            <div class="compra-realizada"> <h1>Compra realizada com sucesso! <br> Muito obrigado</h1> </div>
+                <h3>Resumo</h3>
+                <div class="itens">
+                    <img src="/img/finalizarcompra-img/foto5.jpg" alt="">
+                    <footer>
+                        <span>Musica</span>
+                        <span>Nome artista</span>
+                    </footer>
+                </div>
+                <h2>Forma de pagamento</h2>
+                <div class="inf-pagamento">
+                    <h4>Compra com um click</h4>
+                    <footer>
+                     <img src="/img/finalizarcompra-img/kisspng-logo-mastercard.png" alt="">
+                     <span>Final 9755</span>
+                    </footer>
+               </div>
+               <button id="home-bt"><a href="/home.html">Home</a></button>
+
+            </div>
+        </div>
+
+        
   </main>
   
     <footer></footer>
