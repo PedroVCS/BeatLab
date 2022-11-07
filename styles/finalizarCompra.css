@@ -47,6 +47,9 @@ main{
     align-items: center;
 
 } */
+#dados{
+    display: none;
+}
 .pag h1{
     margin: 2rem;
     text-align: center;
@@ -94,6 +97,9 @@ left: 10rem;
 .bt-finalizar:hover{
     background-color: aqua;
     width: 40%;
+}
+#dadosPix{
+    display: none;
 }
 .barra-lateral{
     width: .5rem;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/finalizarCompra.css">
+    <link rel="stylesheet" href="/styles/finalizarCompra.css">
     <script src="/js/finalizarcompra.js" defer></script>
     <title>Forma de pagamento</title>
 </head>
@@ -33,15 +33,23 @@
             </form>
             <button onclick="finalizar()" class="bt-finalizar">Finalizar</button>
         </div> 
+        <div id="dadosPix" >
+            <div class="box">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" >
+                <label for="cpf">CPF</label>
+                <input type="text" name="cpf" id="cpf">
+            </div>
+        </div>
     </section>  
     <div class="barra-lateral"></div>
     
     <section class="formas-pag">
        <!-- <button id="action-bt">fechar</button>  -->
-       <button id="action-bt"><img src="/img/finalizarcompra-img/logo-pix-1024.png" alt=""></button>
+       <button id="action-bt"  type="button" onclick="Mudarestado('dadosPix')"><img src="/img/finalizarcompra-img/logo-pix-1024.png" alt=""></button>
        <button id="action-bt2"><img src="/img/finalizarcompra-img/kisspng-mastercard-.png" alt=""></button> 
         <div class="umclick">
-        <button id="action-bt3"><h4>Compra com um click</h4>
+        <button id="action-bt3" type="button" onclick="Mudarestado('dados')"><h4>Compra com um click</h4>
         <img src="/img/finalizarcompra-img/kisspng-logo-mastercard.png" alt="">
         <span>Final 9755</span></button>
         </div>  
