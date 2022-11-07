@@ -83,7 +83,8 @@ main{
 #container2{
     display: block;
     flex-direction: row;
-  
+    position: relative;
+    top: 0rem;
 }
 #container2 h1{
     position: relative;
