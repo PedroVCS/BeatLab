@@ -24,7 +24,7 @@ header{
  display: flex;
  flex-direction: column;
  position: relative;
- right: 31rem;
+ right: 25rem;
  top: 2.5rem;
 }
 .menu a{
@@ -81,13 +81,20 @@ main{
     box-shadow: 2px 4px 4px 3px rgba(0, 0, 0, 0.25);
 }
 #container2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: block;
+    flex-direction: row;
+  
+}
+#container2 h1{
+    position: relative;
+    
 }
 .inf-profile{
  display: flex;
  flex-direction: column;
+ position: relative;
+ right: 50rem;
+ top: 4rem;
 }
 .inf-profile input{
     width: 17rem;
@@ -95,8 +102,8 @@ main{
     margin-bottom: 1.5rem;
     margin-top: .3rem;
     background: #514869;
-box-shadow: 2px 4px 4px 3px rgba(0, 0, 0, 0.25);
-border-radius: 10px;
+    box-shadow: 2px 4px 4px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
 }
 #password{
     width: 12rem;
@@ -136,10 +143,8 @@ border-radius: 10px;
     flex-direction: column;
     align-items: center;
     position: relative;
-    right: 6rem;
-    bottom: 4rem;
-   
-    
+    right: 22rem;
+    bottom: 19rem; 
 }
 #container3 img{
     width: 10rem;
@@ -147,7 +152,7 @@ border-radius: 10px;
     border-radius: 50%;
     position: relative;
     bottom: 4.5rem;
-    left: 1rem;
+    right: .1rem;
 }
 .inf-img{
     background-color: #514869;
@@ -158,8 +163,8 @@ border-radius: 10px;
 }
 .inf-img button{
     position: relative;
-    bottom: 4.5rem;
-    left: 2.5rem;
+    bottom: 4rem;
+    left: .1rem;
     width: 7rem;
     height: 2rem;
     background-color: #514869;
@@ -171,23 +176,60 @@ border-radius: 10px;
 .inf-img button:hover{
     background-color: #63548bf3;
 }
-.aboutMe{
+#aboutMe{
     display: flex;
     flex-direction: column;
     position: relative;
-    right: 38rem;
-    top: 8rem;
-   
+    right: 12rem;
+    bottom: 8rem;
 }
-.aboutMe textarea{
+#aboutMe label{
+   position: relative;
+   bottom: 7.7rem;
+   right: 12rem;
+}
+#aboutMe textarea{
     background-color: #514869;
     color: #ffffff;
     margin-top: .5rem;
 }
 #container4{
     display: none;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    left: 24rem;
+    bottom: 25rem;
+
+}
+#card{
+    display: flex;
+    flex-direction: row;
+    width: 25rem;
+    height: 10rem;
+    background-color: #514869;
+    
+}
+#card footer{
+    text-align: justify;
+    color: #FFFFFF;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+  
+
+}
+#card span{
+    width: 8rem;
+    height: 4rem;
+    font-size: 18px;
 }
 
+#card img{
+ width: 15rem;
+height: 10rem;
+
+}
 
 
 

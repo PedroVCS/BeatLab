@@ -30,44 +30,41 @@
     </header>
     <main>
         <section id="container1">
-            <button id="bt-perfil">Perfil</button>
-            <button id="bt-compras">Minhas compras</button>
+            <button onclick="Mudarestado('container2')" id="bt-perfil">Perfil</button>
+            <button onclick="Mudarestado('container4')" id="bt-compras">Minhas compras</button>
         </section>
         <section id="container2"> 
-            <h1>Alterar Dados</h1>
             <form class="inf-profile">
+                <h1>Alterar Dados</h1>
                 <label for="name">Nome</label>
                 <input type="text" name="name" id="name">
                 <label for="lastname">Sobrenome</label>
                 <input type="text" name="lastname" id="lastname">
                 <label for="number">Telefone para recuperar senha</label>
                 <input type="number" name="number" id="number">
-            </form>
-            <button id="password"><a href="">Alterar Senha?</a></button>
-            <button id="bt-save">Salvar altereção</button> 
-        </section>
-        <section id="container3"> 
-            <div class="inf-img">
+                <button id="password"><a href="">Alterar Senha?</a></button>
+                <button id="bt-save">Salvar altereção</button> 
+            </form>            
+            <div id="container3" class="inf-img">
                 <img src="/img/painelDeUsuario.img/image profile.jpg" alt="">
-              <button id="bt-saveImg"> Alterar Foto</button>
+                <button id="bt-saveImg"> Alterar Foto</button>
             </div>
-        </section>
-        <div class="aboutMe">
+        <div id="aboutMe">
            <label for="aboutMe">Conte um pouco sobre você</label>
             <textarea name="aboutMe" id="aboutMe" cols="30" rows="10" placeholder="Quem sou eu?"></textarea>
         </div>
-       <section id="container4">
-        <div id="buy">
+    </section>
+        <div  id="container4" >
             <h1>Compras recentes</h1>
             <div id="card">
-                 <img src="" alt="">
+                 <img src="/img/painelDeUsuario.img/foto5.jpg" alt="">
                  <footer>
                     <span>musica</span>
                     <span>Nome Do Artista</span>
                  </footer>
             </div>
         </div>
-       </section>
+       
     </main>
     <footer></footer>
 </body>
