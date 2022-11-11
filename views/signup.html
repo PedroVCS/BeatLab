@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/signup.css">
+    <script src="/js/signup.js" defer></script>
     <title>Sign up</title>
 </head>
 <body>
@@ -16,26 +17,31 @@
         <div class="barra3"></div>
     </header>
     <main>
+        <span id="msgAlerta"></span>
+
         <section id="sign-up">
             <h1>Sign Up</h1>
-
             <div class="inf-cadastro">
-                <form class="inf-cadastro-caixas">
-                    <label for="name">Nome</label> <input type="text" name="name" id="name">
+                <form class="inf-cadastro-caixas" id="formUp">
+                    <label for="name">Nome</label> <input type="text" name="name" id="name" value="">
                     <label for="lastName">Sobrenome</label> <input type="text" name="lastName" id="lastName">
                         <label for="email">Email</label> <input type="email" name="email" id="email">
-                            <label for="repeatEmail">Confirmar Email</label> <input type="email" name="repeatEmail" id="repeatEmail">
+                            <label for="repetEmail">Confirmar Email</label> <input type="email" name="repetEmail" id="repetEmail">
                                 <label for="password">Senha</label> <input type="password" name="password" id="password">
-                                    <label for="repeatPassword">Confirmar senha</label> 
-                                    <input type="password" name="repeatPassword" id="repeatPassword">
-                                   <button class="bt">Cadastrar</button>   
+                                    <label for="repetPassword">Confirmar senha</label> 
+                                    <input type="password" name="repetPassword" id="repetPassword">
+                                   <button class="bt" onclick="finalizar()">Cadastrar</button>   
                                 </form>
               
                 <div class="barra4"></div>
             </div>
-
-
         </section>
+        <div class="janela-modal" id="janela-modal" >
+            <div class="inf-modal">   
+            <h1>Parabens agora você esta cadastrado! <br> Muito obrigado!</h1> 
+                 <a href="/views/home.html" id="home-bt">Home</a>
+                 </div>
+                </div>
     </main>
     <footer></footer>
 </body>
