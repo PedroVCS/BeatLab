@@ -36,7 +36,6 @@ header{
     flex-wrap: row nowrap;
   
 }
-
 .banner-inf{
     display: flex;
     flex-direction: column;
@@ -75,19 +74,19 @@ height: 1.6rem;
 position: relative;
 bottom: 3.5rem;
 }
-ul{
+.nav ul{
     display: flex;
     flex-direction: row;
+    position: absolute;
+    top: 35rem;
     
 }
-.banner-inf li{
+.nav li{
     list-style: none;
-    position: relative;
-    bottom: 4rem;
-    right: 3.2rem;
-    margin: 1rem;
+    
+   
 }
-.banner-inf a{
+.nav a{
  text-decoration: none;
  color: black;
  font-size: 20px;   
@@ -129,8 +128,7 @@ bottom: -.1rem;
     text-decoration: none;
     color: #FFFFFF;
     font-size: 15px;   
-   }
-
+}
 .player{
     width: 20rem;
     height: 7rem;
@@ -138,72 +136,208 @@ bottom: -.1rem;
     border-radius: 1rem;
     text-align: center;
 }
-.top h1{
+main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.new{
+    margin: 0 auto;
+    width: 25rem;
+    height: 25rem;
+    overflow: hidden;
+    position: relative;
+    top: 15rem;
+}
+.new h1{
     background-color: #08F3C9;
     width: 55rem;
     height: 1.8rem;
     position: relative;
-    right: 3rem;
+    right: 15rem;
     text-align: center;
-    top: 20rem;
     font-size: 22px;
 }
-.container-scroll{
-    width: 70rem;
-    height: 16rem;
-    overflow-x: scroll ; 
-    position: relative;
-    left: 30rem;
+.newMusic{
+    width: 400%;
+    height: 50rem;
     display: flex;
-    flex-direction: row;
-    top: 22rem;
+}
+.newMusic input{
+    display: none;
+}
+.cardsMusic{
+    width: 25%;
+    position: relative;
+    background-color: #514869;
+    cursor: pointer;
+    margin-bottom: 5.8rem;
+    transition: 2s;
+}
+
+.cardsMusic img{
+    width: 25rem;
+    height: 15rem;
+}
+.navigation-manual{
+    position: absolute;
+    width: 25rem;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    top: 26.3rem;
+}
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background-color: #FFFFFF;
+}
+#radio1:checked ~ .first{
+    margin-left: 0%;
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+.navigation-auto div{
+    border:  2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    position:relative;
+    bottom: 2.8rem;
+}
+.navigation-auto{
+    position: absolute;
+    width: 25rem;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #fff;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #fff;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #fff;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #fff;
+}
+.top{
+ 
+width: 75rem;
+height: 12rem;
+display:flex;
+flex-direction: column;
+overflow: hidden;
+position: relative;
+top: 18rem;
+left: 17rem;
+padding: 3rem;
+justify-content: center;
+
   
 }
-.container-scroll::-webkit-scrollbar{
-    /* display: none; */
-    background-color: #08F3C9;
-    box-shadow: 0px 4px 4px 6px rgba(0, 0, 0, 0.25);
-    border-radius: 5px; 
-
-}
-.container-scroll::-webkit-scrollbar:hover{
-    background-color:#514869    
-}
-.card img:hover{
-        border: .5rem solid #514869;
-        border-radius: 45%;
-        transition: all 0.5s;
-        cursor: pointer;
-    
-    }
-
-.card{
-    width: 15rem;
-    height: 12rem;
+.container-scroll{
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+   
+    
+}
+.container1{
+    display: flex;
+    flex-direction: row;
+    transition: 2.5s;
+}
+.topH1{
+    background-color: #08F3C9;
+    width: 55rem;
+    height: 1.8rem;
+   position: relative;
+   top: 20rem;
+   right: 1.7rem;
+    text-align: center;
+    font-size: 22px;
+}
+.container-scroll input{
+display: none;
+}
+.container-scroll{
+   width: 25%;
+   position: relative;
+}
+.navigation-manual-top{
+    position: absolute;
+    width:  75rem;
+    margin-top: 15rem;
+    display: flex;
+    justify-content: center;
+   
+}
+.manual-btn-scroll{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  
+}
+.manual-btn-scroll:not(:last-child){
+    margin-right: 4rem;
+}
+.manual-btn-scroll:hover{
+    background-color: #fff;
+}
+#carrosselScroll1:checked ~ .scroll{
+    margin-left: 0%;
+}
+#carrosselScroll2:checked ~ .scroll{
+    margin-left: -429%;
+}
+.card{
+    margin: 1.2rem;
     background-color: #514869;
-    border-top-left-radius: 45%;
-    border-top-right-radius: 45%;
 }
 .card img{
-    width: 12rem;
+    width: 13rem;
     height: 8rem;
     transition: all .5s;
     border: .0rem solid transparent;
     background-color: #08F3C9;
-    
+   
 }
-.card span{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    color: #FFFFFF;
-    margin: .1rem;
+.card:hover{
+    zoom: 1.;
+    transition: all 0.5s;
+    cursor: pointer;
+    border: 13px solid  rgba(0, 0, 0, 0.466);
+    border-radius: 15px;
+
 }
-#recentes a{
+#recentes a{ 
     text-decoration: none;
     color: black;
     font-size: 20px;   
@@ -212,7 +346,7 @@ bottom: -.1rem;
     width: 55rem;
     height: 1.8rem;
     text-align: center  ;
-    right: 3rem;
+    right: 2rem;
      background-color: #08F3C9;
      position: relative;
      top: 23rem;
@@ -220,6 +354,8 @@ bottom: -.1rem;
 }
 #recentes h1{
     font-size: 22px;
+    position: relative;
+    bottom: 1rem;
 }
 .container-recentes{
     width: 5rem;
@@ -242,8 +378,7 @@ bottom: -.1rem;
     background-color: #08F3C9;
 }
 .card-recente img:hover{
-    border: .1rem solid #514869;
-    border-radius: 40%;
+    zoom: 1.1;
     transition: all 0.5s;
     cursor: pointer;
 }
@@ -296,8 +431,7 @@ bottom: -.1rem;
     background-color: #08F3C9;
 }
 .card-playlist img:hover{
-    border: .1rem solid #514869;
-    border-radius: 40%;
+    zoom: 1.1;
     transition: all 0.5s;
     cursor: pointer;
 }
@@ -323,7 +457,4 @@ footer h1{
     top: 42.6rem;
     left: 83.3rem;
     
-}   
-
-
-
+};

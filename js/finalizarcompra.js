@@ -38,4 +38,5 @@ function Mudarestado(el) {
     document.getElementById(el).style.display = 'block';
   else
     document.getElementById(el).style.display = 'none';
+    
 }
