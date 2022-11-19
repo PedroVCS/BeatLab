@@ -1,4 +1,5 @@
 
+
 body{
     background: linear-gradient(49.5deg, #1B1B2C 57.92%, #3C3C73 89.34%);
     font-family: Arial, Helvetica, sans-serif;
@@ -9,121 +10,157 @@ header{
     flex-wrap: row nowrap;
     justify-content: space-between;
     position: fixed ;   
-    height: 13rem;
+    height: 8.6rem;
     width: 100%;
     top: 0%;
     flex-wrap: wrap;
-    background: linear-gradient(49.5deg, #1B1B2C 57.92%, #3C3C73 89.34%);
+    background:  #1B1B2C;
     right: 0%;
-  z-index: 100;
+    z-index: 100;
+    padding-top: .5rem;
 }
 .barra1{
-    width: 46rem;
-    height: 3rem;
+    width: 24.9rem;
+    height: 2rem;
     background-color: #08F3C9;
     position: fixed;
-    top: 2rem;
+    top: 2.8rem;
     left: 7rem;
+    border-top-right-radius: 25px;
+    animation: beatlab 1.5s alternate infinite ease-in-out;
 }
+
+
 .banner img{
-    width: 20rem;
-    height: 12rem;
+    width: 15rem;
+    height: 7rem;
     position: relative;
 }
 #banner .banner{
     display: flex;
     flex-direction: row;
     flex-wrap: row nowrap;
-  
+ 
 }
 .banner-inf{
     display: flex;
     flex-direction: column;
 }
 .banner-inf h1{
-    font-family: 'Kantumruy';
+font-family: 'Kantumruy';
 font-style: normal;
 font-weight: 400;
-font-size: 35px;
+font-size: 28px;
 line-height: 63px;
-text-align: center;
 letter-spacing: 0.02em;
-
 color: #FFFFFF;
 width: 25rem;
 height: 3rem;
 display: flex;
-align-items: center;
 justify-content: center;
-
 position: relative;
+right: 9.3rem;
 
 }
+
 .banner-inf h2{
     color: #08F3C9;
     position: relative;
     bottom: 3rem;
-    left: 2rem;
+    right: .1rem;
 }
-.banner-inf input{
-    background: #514869;
+
+
+#menu{
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+}
+
+#menu a {
+display: block;
+padding: .5rem;
+}
+
+#btn-mobile{
+    display: none;
+}
+.menuH{
+    display: flex;
+    flex-direction: row;  
+}
+.menuH input{
+background: #514869;
 box-shadow: 2px 4px 4px 3px rgba(0, 0, 0, 0.25);
 border-radius: 10px;
 width: 9rem;
 height: 1.6rem;
 position: relative;
-bottom: 3.5rem;
+bottom: 3.7rem;
+left: 7rem;
+
 }
-.nav ul{
+#menu{
     display: flex;
-    flex-direction: row;
-    position: absolute;
-    top: 35rem;
-    
-}
-.nav li{
     list-style: none;
-    
+    gap: .5rem;
+}
+
+#menu a {
+display: block;
+padding: .5rem;
+position: relative;
+bottom: 4.5rem;
+}
+
+#btn-mobile{
+    display: none;
+    position: relative;
+    bottom: 3rem;
+}
+#menu a{
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+#menu a:hover{
+    background: #fff;
+    font-weight: bold;
+	color: black;
    
 }
-.nav a{
- text-decoration: none;
- color: black;
- font-size: 20px;   
-}
-.menu:hover{
-    font-size: 20px;
-    color: #08F3C9;
-}
+
  #profile-player{
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     align-items: flex-start;
-    width: 25rem;
+
  }
  .profile{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    padding: 1rem;
  }
  .profile img{
-    width: 45px;
-    height: 45px;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
-    margin: 1rem;
     
  }
  .profile h2{
-    margin: 1rem;
-    font-style: normal;
+   
+font-style: normal;
 font-weight: 400;
-font-size: 20px;
+font-size: 14px;
 line-height: 32px;
 letter-spacing: 0.02em;
 color: #FFFFFF;
 position: relative;
 right: 1.5rem;
-bottom: -.1rem;
+bottom: 1rem;
+
  }
+
 .profile a{
     text-decoration: none;
     color: #FFFFFF;
@@ -132,9 +169,11 @@ bottom: -.1rem;
 .player{
     width: 20rem;
     height: 7rem;
-    background-color: #08F3C9;
     border-radius: 1rem;
     text-align: center;
+    position: relative;
+    right: 43.5rem;
+   
 }
 main{
     display: flex;
@@ -458,3 +497,144 @@ footer h1{
     left: 83.3rem;
     
 };
+
+
+
+
+ /* menu hamburger */
+
+
+
+
+
+@keyframes animate {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
+@media (max-width:600px){
+    
+    .banner img{
+        display: none;
+        
+    }
+    .barra1{
+       display: none;
+    }
+    .banner-inf h1{
+        font-size: 23px;
+        bottom: 2rem;
+        background-color: #08F3C9;
+        width: 11rem;
+        height: 2.5rem;
+        left: -2.3rem;
+        border-top-right-radius: 25px;  
+    }
+    .banner-inf h2{
+        font-size: 12px;
+        bottom: 3.8rem;
+        left: .1rem;
+    }
+    .menuH input{
+        left: -1.5rem;
+        width: 6rem;
+
+    }
+   
+    .profile{
+        display: none;
+    }
+    .player{
+       right: 90rem;
+    }
+
+    #btn-mobile{
+        display: block;
+    }
+
+    #menu{
+        display: block;
+    
+        position: absolute;
+        width: 10%;
+        top: 10rem;
+        right: 105rem;
+        background: #e7e7e7;
+        
+        transition: .6s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+
+    }
+
+    #nav.active #menu{
+        height: calc(100vh - 70px);
+       visibility: visible;
+       overflow-y: auto;
+        /*display: flex;*/
+    }
+
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        bottom: -1rem;
+        border-bottom: 2px solid rgba(0,0,0,.05);
+    }
+
+    #btn-mobile{
+        display: flex;
+        /* padding: .5rem 1rem; */
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+#hamburguer{
+    color: #fff;
+   
+    display: block;
+    border-top: 2px solid;
+    width: 20px;
+}
+
+#hamburguer::after, #hamburguer::before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: .3s;
+position: relative;
+}
+
+#nav.active #hamburguer{
+    border-top-color: transparent;
+}
+
+#nav.active #hamburguer::before{
+    transform: rotate(135deg);
+}
+
+#nav.active #hamburguer::after{
+    border-top-color: transparent;
+    transform: rotate(-135deg);
+    top: -7px;
+
+}
+
+
+}
+
