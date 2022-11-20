@@ -10,7 +10,7 @@ infCadastro.onsubmit = evento => {
    if(!nome.value) {
    evento.preventDefault();
     document.getElementById('msgAlerta').innerHTML = '<p> Hum...Algo deu errado.</p><p> Campo Nome é obrigatorio!</p>'
-    console.log(nome);
+   
     return;
 }
     //receber o valor do campo 

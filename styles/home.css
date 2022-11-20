@@ -448,6 +448,12 @@ display: none;
     right: 15rem;
 
 }
+.cardPlay{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    right: 6rem;
+}
 #playlist a{
     text-decoration: none;
     color: black;
@@ -461,6 +467,7 @@ display: none;
      background-color: #08F3C9;
      font-size: 22px;
 }
+
 .card-playlist img{
     width: 7rem;
     height: 5rem;
@@ -522,7 +529,10 @@ footer h1{
 
 
 @media (max-width:600px){
-    
+    header{
+        height: 5.5rem;
+        
+    }
     .banner img{
         display: none;
         
@@ -545,8 +555,9 @@ footer h1{
         left: .1rem;
     }
     .menuH input{
-        left: -1.5rem;
-        width: 6rem;
+        left: 1.3rem;
+        bottom: 3.9rem;
+        width: 5rem;
 
     }
    
@@ -555,6 +566,10 @@ footer h1{
     }
     .player{
        right: 90rem;
+       
+    }
+    .player img{
+        width: 20rem;
     }
 
     #btn-mobile{
@@ -566,7 +581,7 @@ footer h1{
     
         position: absolute;
         width: 10%;
-        top: 10rem;
+        top: 5rem;
         right: 105rem;
         background: #e7e7e7;
         
@@ -600,6 +615,8 @@ footer h1{
         background: none;
         cursor: pointer;
         gap: .5rem;
+        top: -3.5rem;
+        left: .7rem;
     }
 #hamburguer{
     color: #fff;
@@ -634,7 +651,96 @@ position: relative;
     top: -7px;
 
 }
+/* main */
 
+.new{
+    position: relative;
+    right:3rem;
+    top: 5rem;
+    width: 20rem;
+    
+}
+.new h1{
+    font-size: 15px;
+}
+.navigation-manual{
+    top: 25.6rem;
+    left: -2rem;
+    
+}
+.navigation-auto div{
+    left: -2rem;
+}
+.topH1{
+    top:    8rem;
+    width: 15rem;
+    height: 1.1rem;
+    font-size: 15px;
+}
+.top{
+    overflow-x: scroll;
+   top: 5rem;
+   left: 1.5rem;
+   width: 19rem;
+   height: 15rem;
+
+}
+.card img{
+    width: 7rem;
+    height: 5rem;
+}
+.navigation-manual-top{
+    display: none;
+
+}
+ #recentes{
+    top: 4rem;
+    width: 5rem;
+    height: 5rem;
+    right: 30rem;
+ }
+ #recentes h1{
+    font-size: 15px;
+    text-align: center;
+    top: -.58rem;
+    left: 29rem;
+  background-color: #08F3C9;
+  width: 15rem;
+ }
+.container-recentes{
+    overflow-x: scroll;
+    width: 25rem;
+    height: 12rem;
+    top: -4rem;
+}
+#playlist{
+    top: 12rem;
+    width: 9rem;
+    height: 5rem;
+   
+
+   
+}
+#playlist a h1{
+    font-size: 15px;
+    width: 15rem;
+    height: 1.1rem;
+    left: 15rem;
+   
+}
+.cardPlay{
+ 
+    
+    
+    
+}
+.card-playlist{
+    flex-direction: column;
+    flex-wrap: wrap;
+    right: 10rem;
+    width: 15rem;
+   
+}
 
 }
 
