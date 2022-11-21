@@ -1,5 +1,5 @@
 const infCadastro = document.querySelector('#formUp');
-const validar = false
+
 infCadastro.onsubmit = evento => {
     //receber o valor do campo 
     var nome = document.querySelector('#name');
@@ -49,16 +49,14 @@ infCadastro.onsubmit = evento => {
 
 
 //JANELA MODAL PARA VOLTAR AO HOME APOS FINALIZAR O CADASTRO
-function finalizar(){
-    const modal = document.getElementById('janela-modal')
-    setTimeout(() => {
+// function finalizar(){
+//     const modal = document.getElementById('janela-modal')
        
-    modal.classList.add('abrir')
-}, 60000);
+//     modal.classList.add('abrir') 
 
-    modal.addEventListener('click', (e) => {
-        if(e.target.id == 'home-bt' ){
-            modal.classList.remove('abrir')
-        }         
-    }) 
-};
+//     modal.addEventListener('click', (e) => {
+//         if(e.target.id == 'home-bt' ){
+//             modal.classList.remove('abrir')
+//         }         
+//     }) 
+// };
